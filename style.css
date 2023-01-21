@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Inter', sans-serif;
+	color: #000000;
+	scroll-behavior: smooth;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	padding: 0px 15px;
+	margin: 0 auto;
+	max-width: 1222px;
+	box-sizing: content-box;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover {
+	opacity: .75;
+}
+
+.title__plants {
+	font-family: 'Inika', serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 20px;
+	color: #E06733;
+}
+
+li {
+	list-style-type: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: .75;
+}
+
+.header {
+	background-color: #EDF2EC;
+}
+
+.header__container {
+	padding: 42px 0;
+}
+
+.header__menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar {
+	width: 100%;
+	height: 75px;
+	background: #EDF2EC;
+	;
+}
+
+.navbar__wrap {
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.hamb {
+	display: none;
+}
+
+.popup {
+	display: none;
+}
+
+.header__logo {
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	color: #000000;
+	display: flex;
+	align-items: center;
+}
+
+.menu>li>a {
+	text-decoration: none;
+}
+
+.navbar__wrap .menu {
+	display: flex;
+}
+
+.navbar__wrap .menu>li {
+	display: flex;
+	align-items: stretch;
+}
+
+.navbar__wrap .menu>li>a {
+	padding-right: 46px;
+	display: flex;
+	align-items: center;
+	font-family: 'Inika';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 50px;
+	color: #010201;
+}
+
+.menu span {
+	color: #E06733;
+}
+
+
+.navbar__wrap .menu>li>a:hover {
+	color: #499A18;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.welcome-wrapper {
+	background-color: #EDF2EC;
+}
+
+.welcome__block {
+	padding-top: 62px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.welcome-block__text {
+	max-width: 549px;
+	padding-bottom: 94px;
+}
+
+.welcome-block__text h1 {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 50px;
+}
+
+h1 {
+	padding-top: 14px;
+	padding-bottom: 40px;
+	color: #717171;
+}
+
+h1 span {
+	color: #499A18;
+}
+
+.welcome-block__text p {
+	padding-bottom: 48px;
+	color: #636060;
+	line-height: 35px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.welcome-block__text p:hover {
+	color: #499A18;
+	transition: 0.4s;
+}
+
+.welcome-block__img {
+	max-width: 448px;
+	max-height: 407px;
+}
+
+.welcome-block__button {
+	width: 158px;
+	height: 44px;
+	background-color: #EDF2EC;
+	border: 2px solid #E06733;
+	border-radius: 10px;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.welcome-block__button:hover {
+	background-color: #E06733;
+	transition: 0.4s;
+	color: #FFFFFF;
+}
+
+.about__block {
+	display: flex;
+}
+
+.about-block__text {
+	margin-top: 158px;
+	margin-right: 153px;
+	max-width: 605px;
+}
+
+
+.about-block__text h2 {
+	width: 463px;
+	padding-bottom: 40px;
+	font-family: 'Inika';
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 52px;
+}
+
+.about-block__text p:hover {
+	color: #499A18;
+	transition: 0.4s;
+}
+
+.about-block__img {
+	margin-bottom: 94px;
+	margin-top: 92px;
+	max-width: 464px;
+	width: 50%;
+}
+
+.about h2,
+.service h2 {
+	font-size: 40px;
+	line-height: 52px;
+	font-weight: 400;
+	color: #499A18;
+}
+
+.about span {
+	color: #E06733;
+}
+
+.about p {
+	line-height: 30px;
+	color: #636060;
+}
+
+.service {
+	background-color: #EDF2EC;
+}
+
+.service__menu {
+	display: flex;
+	align-items: center;
+	padding-top: 42px;
+	padding-bottom: 77px;
+}
+
+.service__menu h2 {
+	max-width: 306px;
+	margin-right: 142px;
+	font-family: 'Inika';
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 52px;
+}
+
+.service__buttons {
+	display: flex;
+}
+
+.service__button {
+	font-family: 'Inika';
+	width: 161px;
+	height: 50px;
+	background-color: #EDF2EC;
+	border: 1px solid #E06733;
+	border-radius: 5px;
+	font-size: 1em;
+	line-height: 26px;
+	color: #E06733;
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+	margin-right: 38px;
+	padding-right: 4px;
+	font-weight: 400;
+}
+
+.service__button:hover {
+	background-color: #E06733;
+	transition: 0.4s;
+	color: #FFFFFF;
+}
+
+
+.service p {
+	color: #717171;
+	line-height: 20px;
+}
+
+.service-grid__card {
+	border: 1px solid #E3E1D5;
+	border-radius: 6%;
+}
+
+.service-grid__card img {
+	width: 100%;
+}
+
+.service-grid__card h3 {
+	padding-bottom: 10px;
+}
+
+.service-grid__card p {
+	padding-bottom: 36px;
+}
+
+.service-grid__wrapper {
+	margin-right: -11px;
+	padding-bottom: 119px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-row-gap: 68px;
+	grid-column-gap: 109px;
+}
+
+.text__card p {
+	text-align: center;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #717171;
+}
+
+.text__card h3 {
+	padding-top: 7px;
+	padding-bottom: 12px;
+	text-align: center;
+}
+
+.price-wrapper__container {
+	display: flex;
+	justify-content: space-between;
+	padding: 36px 0 111px;
+}
+
+.price__menu {
+	padding: 33px 40px;
+	border: 1px solid #E3E1D5;
+	border-radius: 20px;
+}
+
+.price__item {
+	margin-bottom: 30px;
+	margin-left: -4px;
+	width: 250px;
+	height: 50px;
+	padding: 16px 40px;
+	position: relative;
+	background-color: #EDF2EC;
+	border-radius: 20px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.price__item:after {
+	content: '';
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 17px;
+	right: 40px;
+	background: #D9D9D9 url(../plants/image/logo_svg/arrow.svg) no-repeat center;
+	border-radius: 50%;
+}
+
+.price-block__text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.price__title {
+	margin-bottom: 60px;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+}
+
+.price__subtitle {
+	width: 452px;
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
+	text-align: right;
+	color: #000000;
+}
+
+.price__subtitle span {
+	color: #499A18;
+}
+
+.price__contact {
+	margin-top: 38px;
+	margin-bottom: 39px;
+	width: 161px;
+	height: 50px;
+	background: transparent;
+	font-family: 'Inika';
+	text-align: center;
+	color: #E06733;
+	border: 1px solid #E06733;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 26px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.price__contact:hover {
+	background-color: #E06733;
+	transition: 0.4s;
+	color: #FFFFFF;
+}
+
+.contacts {
+	text-align: center;
+	background-color: #EDF2EC;
+}
+
+.contacts-wrapper {
+	padding-top: 6px;
+}
+
+.contacts h2 {
+	padding-top: 48px;
+	font-family: 'Inika';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 52.12px;
+	color: #499A18;
+}
+
+.contacts__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	position: relative;
+}
+
+.select {
+	margin-top: 37px;
+	margin-bottom: 352px;
+	position: relative;
+	cursor: pointer;
+	width: 450px;
+	height: 50px;
+	padding: 3px 226px 8px 22px;
+	text-align: start;
+	font-size: 20px;
+	line-height: 2em;
+	letter-spacing: 0.05em;
+	color: #717171;
+	border: none;
+	appearance: none;
+	background: #D6E7D2 url(../plants/image/logo_svg/accordion_btn.svg) 92% / 3.5% no-repeat;
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.contacts__image {
+	position: relative;
+}
+
+.contacts__image img {
+	position: absolute;
+	bottom: 0;
+	left: -770px;
+}
+
+.footer {
+	flex: 1 1 auto;
+}
+
+.footer-wrapper__container {
+	padding-top: 46px;
+	padding-bottom: 46px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__item {
+	display: flex;
+	flex-direction: row;
+}
+
+.footer__item p {
+	margin-right: 23px;
+}
+
+.footer__links {
+	display: flex;
+	align-items: center;
+}
+
+.footer__link {
+	box-sizing: content-box;
+	background: no-repeat center;
+}
+
+.footer__link:not(:last-child) {
+	margin-right: 20px;
+}
