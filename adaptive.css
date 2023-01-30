@@ -123,19 +123,6 @@
 		height: 350px;
 	}
 
-	.price-wrapper__container {
-		padding: 40px 0 111px;
-	}
-
-	.price__menu {
-		padding: 34px 45px;
-		padding-bottom: 6px;
-	}
-
-	.price__block {
-		padding-bottom: 68px;
-		margin-top: 0px;
-	}
 
 	.price__title {
 		margin-left: 15px;
@@ -145,6 +132,7 @@
 	}
 
 	.price-block__text {
+		margin-left: 32px;
 		margin-top: 0;
 		display: flex;
 		max-width: 296px;
@@ -212,7 +200,7 @@
 }
 
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 680px) {
 	.container {
 		max-width: 330px;
 	}
@@ -283,6 +271,11 @@
 		font-size: 24px;
 	}
 
+	.navbar__wrap .menu>li>a {
+		font-size: 16px;
+		padding-right: 8px;
+	}
+
 	.menu__sub-list {
 		transform: translate(0px, 10%);
 		opacity: 0;
@@ -321,11 +314,13 @@
 	}
 
 	.about-block__img {
+		margin-left: 89px;
 		max-width: 150px;
 		max-height: 147px;
 	}
 
 	.about-block__text h2 {
+		width: 423px;
 		padding-bottom: 13px;
 		padding-top: 0;
 		font-size: 25px;
@@ -339,24 +334,37 @@
 		line-height: 25px;
 	}
 
-	.price-wrapper__container {
-		margin-top: 0px;
-		padding-bottom: 40px;
-		flex-direction: column;
-		align-items: center;
+	.price {
+		display: flex;
+		flex-wrap: wrap;
 	}
 
-	.prices h2 {
-		margin-bottom: 28px;
-		margin-left: 0;
-		font-size: 25px;
+	.main-prices__block .prices__accordion {
+		margin: 0;
 	}
 
-	.price__menu {
-		margin-top: 0px;
-		padding-bottom: 40px;
-		flex-direction: column;
-		align-items: center;
+	.main-prices__block {
+		margin-bottom: 108px;
+	}
+
+	.price__subtitle {
+		margin-left: -97px;
+	}
+
+	.price-block__text {
+		margin-left: 43px;
+	}
+
+	.price__contact {
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 20px;
+		text-align: center;
+		color: #E06733;
+	}
+
+	.price__image {
+		display: block;
 	}
 
 	.select {
@@ -614,11 +622,6 @@
 		width: 288px;
 	}
 
-	.price__block {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
 
 	.contacts__list {
 		padding-bottom: 0;
@@ -638,23 +641,6 @@
 		text-align: center;
 	}
 
-	.price__menu {
-		padding: 7px 40px;
-		border: 1px solid #E3E1D5;
-		border-radius: 20px;
-	}
-
-	.price-wrapper__container {
-		margin-top: -12px;
-	}
-
-	.price__item {
-		padding: 15px 61px 15px 30px;
-		width: 180px;
-		height: 49.72px;
-		font-size: 15px;
-		line-height: 20px;
-	}
 
 	.contacts-wrapper h2 {
 		font-size: 25px;
@@ -667,7 +653,7 @@
 	}
 
 	.price__contact {
-		margin: 3px 58px 32px 0px;
+		margin: 3px 58px 40px 0px;
 		font-size: 15px;
 		line-height: 20px;
 	}
