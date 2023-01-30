@@ -1,4 +1,4 @@
-# # Проект: Plants.
+## Проект: Plants.
 
 ### [Ссылка на проект](https://elsiesmile.github.io/plants/)
 
