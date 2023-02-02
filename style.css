@@ -293,6 +293,7 @@ button:hover {
 	display: flex;
 }
 
+
 .service__button {
 	font-family: 'Inika';
 	width: 161px;
@@ -336,6 +337,22 @@ button:hover {
 
 .service-grid__card p {
 	padding-bottom: 36px;
+}
+
+figure.blur {
+	filter: blur(2px);
+	transition: 1s;
+}
+
+.service__buttons button.active {
+	color: #ffffff;
+	background-color: #E06733;
+}
+
+.service__buttons button.disabled {
+	border-color: #ffffff;
+	color: #ffffff;
+	background-color: #adabab;
 }
 
 .service-grid__wrapper {
@@ -568,58 +585,169 @@ button:hover {
 /* -----------------------------конец price---------------------------------- */
 
 /* -----------------------------contacts---------------------------------- */
-.contacts {
-	text-align: center;
+#contacts {
 	background-color: #EDF2EC;
 }
 
 .contacts-wrapper {
-	padding-top: 6px;
+	display: flex;
 }
 
-.contacts h2 {
-	padding-top: 48px;
+.contacts-wrapper h2 {
+	margin-left: 113px;
+	margin-top: 55px;
 	font-family: 'Inika';
+	font-style: normal;
 	font-weight: 700;
 	font-size: 40px;
-	line-height: 52.12px;
+	line-height: 52px;
 	color: #499A18;
 }
 
-.contacts__list {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	position: relative;
+.contacts-wrapper img {
+	margin-top: 52px;
 }
 
-.select {
-	margin-top: 37px;
-	margin-bottom: 352px;
-	position: relative;
-	cursor: pointer;
+.contacts__city {
+	margin: 2.6rem 0 0 23.2rem;
 	width: 450px;
 	height: 50px;
-	padding: 3px 226px 8px 22px;
-	text-align: start;
 	font-size: 20px;
-	line-height: 2em;
+	padding-left: 2.3rem;
+	box-sizing: border-box;
+	border: 0;
+	text-align: left;
+	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+	appearance: none;
+	cursor: pointer;
+	color: #717171;
+	font-family: 'Inter';
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0.05em;
+	background-color: #D6E7D2;
+}
+
+.contacts__city:hover {
+	transition: 0.5s;
+	background-color: #C1E698;
+}
+
+.contacts__city-block {
+	margin: 3.6rem 0 0 30.2rem;
+	position: absolute;
+	width: 451px;
+	display: none;
+	flex-direction: column;
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 40px;
+	letter-spacing: 0.05em;
+	color: #499A18;
+	background: #DCE9D9;
+}
+
+.contacts__city-block span {
+	padding: 5px 0px 5px 41px;
+	border-bottom: 1px solid #D9D9D9;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 40px;
 	letter-spacing: 0.05em;
 	color: #717171;
-	border: none;
-	appearance: none;
-	background: #D6E7D2 url(../plants/image/logo_svg/accordion_btn.svg) 92% / 3.5% no-repeat;
-	box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
-.contacts__image {
-	position: relative;
+.contacts__city-block span:hover {
+	cursor: pointer;
+	border-bottom: 1px solid #717171;
+	width: 380px;
+	color: #499A18;
 }
 
-.contacts__image img {
-	position: absolute;
-	bottom: 0;
-	left: -770px;
+.contacts__city-block.active {
+	display: flex;
+	margin: 0px 0px 0px 371px;
+}
+
+.city-info-section {
+	margin-left: 374px;
+	display: none;
+	width: 448px;
+	height: 214px;
+	background: #EDF2EC;
+	border: 1px solid #000000;
+	border-radius: 20px;
+}
+
+.city-info-section.active {
+	padding: 17px 76px 32px 33px;
+	display: flex;
+	margin-top: 47px;
+}
+
+.city-info-section .name-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.data-info {
+	display: flex;
+	flex-direction: column;
+	padding-left: 10px;
+	font-size: 16px;
+	line-height: 40px;
+	letter-spacing: 0.05em;
+	color: #717171;
+}
+
+.city-info-section button {
+	width: 122px;
+	height: 26px;
+	font-family: 'inika';
+	font-size: 10px;
+	line-height: 1.3rem;
+	border: 1px solid #E06733;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.5s;
+	background-color: #EDF2EC;
+}
+
+.name-info span {
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 40px;
+	letter-spacing: 0.05em;
+	color: #000000;
+}
+
+.item-city span {
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 40px;
+	letter-spacing: 0.05em;
+	color: #717171;
+}
+
+.city-info-section button:hover {
+	color: #ffffff;
+	background-color: #E06733;
+}
+
+.call-us button {
+	font-family: 'Inika';
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 13px;
+	text-align: center;
+	color: #717171;
+	width: 122px;
+	height: 26px;
 }
 
 /* --------------------------конец contacts---------------------------------- */
