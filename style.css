@@ -605,7 +605,8 @@ figure.blur {
 }
 
 .contacts-wrapper img {
-	margin-top: 52px;
+	max-width: 400px;
+	width: 100%;
 }
 
 .contacts__city {
@@ -662,8 +663,6 @@ figure.blur {
 
 .contacts__city-block span:hover {
 	cursor: pointer;
-	border-bottom: 1px solid #717171;
-	width: 380px;
 	color: #499A18;
 }
 
@@ -675,7 +674,7 @@ figure.blur {
 .city-info-section {
 	margin-left: 374px;
 	display: none;
-	width: 448px;
+	max-width: 448px;
 	height: 214px;
 	background: #EDF2EC;
 	border: 1px solid #000000;

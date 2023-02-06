@@ -135,6 +135,7 @@
 		margin-left: 32px;
 		margin-top: 0;
 		display: flex;
+		align-items: center;
 		max-width: 296px;
 	}
 
@@ -158,10 +159,13 @@
 	}
 
 	.contacts-wrapper {
-		margin-top: -29px;
-		margin-left: 297px;
-		padding-bottom: 145px;
+		display: flex;
 		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 1px;
+		background-position: 52% bottom;
+		height: 739px;
 	}
 
 	.contacts h2 {
@@ -175,9 +179,13 @@
 		margin: 0px;
 	}
 
+	.contacts-wrapper {
+		padding-bottom: 251px;
+	}
+
 	.contacts-wrapper img {
-		width: 200px;
-		height: 248.49px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 
@@ -335,6 +343,7 @@
 	}
 
 	.price {
+		padding-bottom: 52px;
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -450,23 +459,18 @@
 		padding-top: 15px;
 		padding-bottom: 72px;
 		font-size: 40px;
-		margin-left: 0px;
 	}
 
 	.contacts__city,
 	.contacts__city-block.active {
-		width: 300px;
-		height: 50px;
-		margin-left: -131px;
-	}
-
-	.city-info-section.active {
-		margin-left: -131px;
+		padding-right: 35px;
+		width: 450px;
 	}
 
 	.contacts-wrapper img {
-		width: 200px;
-		height: 248.49px;
+		max-width: 217px;
+		width: 100%;
+		padding: 249px 0px 0px 18px;
 	}
 
 	.footer-wrapper__container {
@@ -626,15 +630,10 @@
 		width: 288px;
 	}
 
-	.contacts-wrapper {
-		margin-left: 77px;
-	}
-
 	.contacts__city,
 	.contacts__city-block.active {
-		width: 300px;
+		max-width: 300px;
 		height: 50px;
-		margin-left: -36px;
 	}
 
 	.service-grid__wrapper {
@@ -653,13 +652,20 @@
 		line-height: 33px;
 	}
 
+	.city-info-section.active {
+		max-width: 282px;
+		height: 212px;
+		font-size: 16px;
+		line-height: 40px;
+		letter-spacing: 0.05em;
+	}
+
 	.price__subtitle {
 		margin-top: -88px;
 		margin-left: 1px;
 	}
 
 	.price__contact {
-		margin: 3px 58px 40px 0px;
 		font-size: 15px;
 		line-height: 20px;
 	}
